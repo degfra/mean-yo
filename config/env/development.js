@@ -3,7 +3,7 @@
 module.exports = {
 	db: 'mongodb://localhost/mean-yo-dev',
 	app: {
-		title: 'MEAN_yo - Development Environment'
+		title: 'MEAN Lausanne'
 	},
 	facebook: {
 		clientID: process.env.FACEBOOK_ID || 'APP_ID',

@@ -2,8 +2,8 @@
 
 module.exports = {
 	app: {
-		title: 'MEAN_yo',
-		description: 'Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js',
+		title: 'MEAN Lausanne',
+		description: 'MEAN Lausanne User Group',
 		keywords: 'MongoDB, Express, AngularJS, Node.js'
 	},
 	port: process.env.PORT || 3000,
