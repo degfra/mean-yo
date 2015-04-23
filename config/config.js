@@ -13,7 +13,7 @@ module.exports = _.merge(		//extend
 	require('./env/all'),
 	require('./env/' + process.env.NODE_ENV) || {}
 );
-//console.log(module.exports);
+console.log(module.exports);
 /**
  * Get files by glob patterns
  */
