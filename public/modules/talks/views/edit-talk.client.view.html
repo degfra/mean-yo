@@ -12,6 +12,24 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label class="control-label" for="description">Description</label>
+                    <div class="controls">
+                        <textarea data-ng-model="talk.description" id="description" class="form-control" placeholder="Description" required></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="presenter">Presenter</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="talk.presenter" id="presenter" class="form-control" placeholder="Presenter" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="slidesUrl">Slides</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="talk.slidesUrl" id="slidesUrl" class="form-control" placeholder="Slides Url" required>
+                    </div>
+                </div>
+                <div class="form-group">
                     <input type="submit" value="Update" class="btn btn-default">
                 </div>
 				<div data-ng-show="error" class="text-danger">
