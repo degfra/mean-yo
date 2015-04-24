@@ -13,3 +13,12 @@
 .ng-valid.ng-dirty {
 	border-color: #78FA89;
 }
+.event {
+	width: 75%;
+}
+.event-date {
+	font-style: italic;
+}
+.event-title {
+	margin-top: 0;
+}
