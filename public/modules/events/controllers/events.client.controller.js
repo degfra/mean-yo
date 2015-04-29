@@ -1,7 +1,8 @@
 'use strict';
 
-angular.module('events').controller('EventsController', ['$scope',
-	function($scope) {
+angular.module('events').controller('EventsController', ['$scope', 'Events',
+	function($scope, Events) {
+        /*
 		$scope.title = 'High Performance WebSocket';
 		$scope.event = {
 			'name': '"Developing Offline Applications" and "HTML 5 Animations"',
@@ -15,5 +16,13 @@ angular.module('events').controller('EventsController', ['$scope',
 				'state': 'Vaud'
 			}
 		}
+         */
+
+		$scope.event = undefined;
+
+		Events.getNextEvent().success(function(data) {
+			$scope.event = data;
+		});
+
 	}
 ]);
