@@ -52,6 +52,12 @@ module.exports = function(app) {
 	app.route('/auth/github').get(passport.authenticate('github'));
 	app.route('/auth/github/callback').get(users.oauthCallback('github'));
 
+	// Setting the meetup oauth routes
+	app.route('/auth/meetup').get(passport.authenticate('meetup', {
+		scope: ['email']
+	}));
+	app.route('/auth/meetup/callback').get(users.oauthCallback('meetup'));
+
 	// Finish by binding the user middleware
 	app.param('userId', users.userByID);
 };

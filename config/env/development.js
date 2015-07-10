@@ -5,6 +5,11 @@ module.exports = {
 	app: {
 		title: 'MEAN Lausanne'
 	},
+	meetup: {
+		clientID: process.env.MEETUP_KEY || 'APP_ID',
+		clientSecret: process.env.MEETUP_SECRET || 'APP_SECRET',
+		callbackURL: 'http://localhost:3000/auth/meetup/callback'
+	},
 	facebook: {
 		clientID: process.env.FACEBOOK_ID || 'APP_ID',
 		clientSecret: process.env.FACEBOOK_SECRET || 'APP_SECRET',
