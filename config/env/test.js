@@ -1,7 +1,8 @@
 'use strict';
 
 module.exports = {
-	db: 'mongodb://localhost/mean-yo-test',
+	//db: 'mongodb://localhost/mean-yo-test',
+	db: 'mongodb://localhost/heroku_qmx8z7v2',
 	port: 3001,
 	app: {
 		title: 'MEAN_yo - Test Environment'

@@ -1,7 +1,8 @@
 'use strict';
 
 module.exports = {
-	db: 'mongodb://localhost/mean-yo-dev',
+	//db: 'mongodb://localhost/mean-yo-dev',
+	db: 'mongodb://localhost/heroku_qmx8z7v2',
 	app: {
 		title: 'MEAN Lausanne'
 	},
